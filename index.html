@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>SB3 Heavy Player</title>
+
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    canvas {
+      margin-top: 20px;
+      border: 2px solid #444;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Heavy Scratch Player</h1>
+
+<input id="url" placeholder="https://scratch.mit.edu/projects/...">
+<button onclick="start()">Start</button>
+
+<br>
+
+<canvas id="stage" width="480" height="360"></canvas>
+
+<!-- Core libs -->
+<script src="https://unpkg.com/scratch-vm"></script>
+<script src="https://unpkg.com/scratch-render"></script>
+<script src="https://unpkg.com/scratch-audio"></script>
+<script src="https://unpkg.com/scratch-storage"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
